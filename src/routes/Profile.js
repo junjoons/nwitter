@@ -1,3 +1,5 @@
 import React from "react"
 
-export default () => <span>My Profile</span>
+const Profile = () => <span>My Profile</span>
+
+export default Profile
