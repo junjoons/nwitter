@@ -8,9 +8,13 @@ const Auth = () => {
       target: { name, value },
     } = event;
 
-    if(name==="email")
+    if (name === "email") {
+      setEmail(value);
+    } else if (name === "password") {
+      setPassword(value);
+    }
   };
-  
+
   const onSubmit = (event) => {
     event.preventDefault();
   };
