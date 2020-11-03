@@ -22,7 +22,7 @@ const Auth = () => {
     <div>
       <form onSubmit={onSubmit}>
         <input
-          name="Email"
+          name="email"
           type="text"
           placeholder="Enter Email"
           required
@@ -30,7 +30,7 @@ const Auth = () => {
           onChange={onChange}
         />
         <input
-          name="Password"
+          name="password"
           type="password"
           placeholder="Enter Password"
           required
