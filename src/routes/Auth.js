@@ -37,12 +37,7 @@ const Auth = () => {
     }
   };
 
-  const toggleAccount = () => {
-    console.log("toggled account");
-    setNewAccount((prev) => {
-      prev = !prev;
-    });
-  };
+  const toggleAccount = () => setNewAccount((prev) => !prev);
 
   return (
     <div>
@@ -76,7 +71,6 @@ const Auth = () => {
       <div>
         <button onClick={toggleAccount}>
           {newAccount ? "Sign In" : "Sign Up"}
-          {console.log(newAccount)}
         </button>
       </div>
     </div>
